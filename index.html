@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Psychosociale Therapie | Marianne Bles</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" href="images/favicon.ico" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="tabs/tabs.min.js"></script>
+	</head>
+
+	<body id="index">
+		<div class="vak">
+			<header>
+				<img src="images/logo7.png" class="logo" alt="Hart met hand ouder en kind" width="70" height="62" />
+				<h1>Psychosociale Therapie</h1>
+				<div class="clear">
+				</div>
+				<h3>Met Open Hart</h3>
+				<img src="images/header2.jpg" alt="Lavendelveld" class="header" width="960" height="90" />
+			</header>
+			<div class="clear"></div>
+			<div class="menu">
+				<ul>
+					<li id="nav_index" class="first"><a href="index">Welkom</a></li>
+					<li id="nav_overmij"><a href="over-mij">Over mij</a></li>
+					<li id="nav_therapie"><a href="therapie">Therapie</a></li>
+					<li id="nav_opvoedingsvragen"><a href="opvoedingsvragen">Opvoedingsvragen</a></li>
+					<li id="nav_werkwijze"><a href="werkwijze">Werkwijze</a></li>
+					<li id="nav_reacties"><a href="ervaringen">Ervaringen</a></li>
+					<li id="nav_links"><a href="links">Links</a></li>
+					<li class="nav_contact"><a href="contact">Contact</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<img src="images/foto5.jpg" alt="Ouder en Kind" class="foto" width="350" height="570" />
+				<div class="tekst">
+					<h4 class="three">
+						<span>Welkom</span>
+					</h4>
+					<p>
+						Praktijk "Met Open Hart" biedt zowel psychosociale therapie als begeleiding bij opvoedingsvragen of een Kindertolktraject.</p>
+					<p>
+						Wil je graag werkelijk contact ervaren met jezelf en de mensen om je heen, onderzoeken wat je nu echt wilt in het leven, meer vertrouwen op jezelf of je oorspronkelijke levenslust meer voelen en wil je ook ontdekken wat je hiervan weerhoudt, dan ben je
+						welkom bij mij. Op deze site vind je meer informatie over wat therapie voor jou zou kunnen betekenen.</p>
+					<p>
+						Voor veel mensen heeft therapie een wat beladen betekenis. Voor mij is het een proces van persoonlijke ontwikkeling, van bewustwording van wie je ten diepste bent en daar steeds meer naar kunnen en durven leven. Dit voelt als helen en groeien! Als leven
+						met hart en ziel..... met open hart.....</p>
+					<p>
+						Ik geef individuele therapie. Daarnaast ben ik gespecialiseerd in het werken met ouders (met name van jonge kinderen) die er naar verlangen meer zelfvertrouwen te ervaren als opvoeder; ouders die hun eigen gevoel en kracht willen herontdekken en inzetten
+						in de opvoeding. In dat geval kunnen we ook je opvoedingsvraag als uitgangspunt nemen. Als het nodig is en als jij dat wilt, kunnen we vervolgens dieper gaan kijken.</p>
+					<div class="spreukcontainer">
+						<hr />
+						<p class="spreuk"><i>In ieder van ons zit een kern waar we niet gekwetst zijn, waar we gezond, ontvankelijk en krachtig zijn. Die kern terugvinden is misschien wel de mooiste zoektocht van ons leven.</i></p>
+						<p class="spreuk2"><i>Piero Ferrucci</i></p>
+					</div>
+
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="footervak">
+				<footer class="footertekst">
+					<table>
+						<tbody>
+							<tr>
+								<td>
+									Marianne Bles
+								</td>
+								<td>
+									|
+								</td>
+								<td>
+									Psychosociale Therapie Met Open Hart
+								</td>
+								<td>
+									|
+								</td>
+								<td>
+									<a href="tel:06-12452224" class="link">06-12452224</a>
+								</td>
+								<td>
+									|
+								</td>
+								<td>
+									<a href="mailto:info@mariannebles.nl?SUBJECT=Reactie" class="link">info@mariannebles.nl</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</footer>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(function() {
+
+				var $tabs = $('#tabs').tabs();
+
+				$(".ui-tabs-panel").each(function(i) {
+
+					var totalSize = $(".ui-tabs-panel").size() - 1;
+
+					if (i != totalSize) {
+						next = i + 2;
+						$(this).append("<a href='#' class='next-tab mover' rel='" + next + "'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Volgende  &#187;</a>");
+					}
+
+					if (i != 0) {
+						prev = i;
+						$(this).append("<a href='#' class='prev-tab mover' rel='" + prev + "'>&#171;  Vorige &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>");
+					}
+
+				});
+
+				$('.next-tab, .prev-tab').click(function() {
+					$tabs.tabs('select', $(this).attr("rel"));
+					return false;
+				});
+
+
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".overlayf").css("display", "block");
+			});
+			$(document).ready(function() {
+				$(".overlayf2").css("display", "block");
+			});
+			$(document).ready(function() {
+				$("html").css("overflow", "auto");
+			});
+		</script>
+
+
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-46475527-2', 'mariannebles.nl');
+			ga('send', 'pageview');
+		</script>
+
+	</body>
+
+</html>

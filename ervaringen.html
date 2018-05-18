@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Psychosociale Therapie | Marianne Bles</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" href="images/favicon.ico" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="tabs/tabs.min.js"></script>
+
+	</head>
+
+	<body id="reacties">
+		<div class="vak">
+			<header>
+				<img src="images/logo7.png" class="logo" alt="Hart met hand ouder en kind" width="70" height="62" />
+				<h1>Psychosociale Therapie</h1>
+				<div class="clear">
+				</div>
+				<h3>Met Open Hart</h3>
+				<img src="images/header2.jpg" alt="Lavendelveld" class="header" width="960" height="90" />
+			</header>
+			<div class="clear"></div>
+			<div class="menu">
+				<ul>
+					<li id="nav_index" class="first"><a href="index">Welkom</a></li>
+					<li id="nav_overmij"><a href="over-mij">Over mij</a></li>
+					<li id="nav_therapie"><a href="therapie">Therapie</a></li>
+					<li id="nav_opvoedingsvragen"><a href="opvoedingsvragen">Opvoedingsvragen</a></li>
+					<li id="nav_werkwijze"><a href="werkwijze">Werkwijze</a></li>
+					<li id="nav_reacties"><a href="ervaringen">Ervaringen</a></li>
+					<li id="nav_links"><a href="links">Links</a></li>
+					<li class="nav_contact"><a href="contact">Contact</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<img src="images/foto4.jpg" alt="Ouder en Kind" class="foto" />
+				<div class="tekst">
+					<h4 class="three">
+						<span>Ervaringen</span>
+					</h4>
+					<p>
+						<b>Wat anderen vertellen:</b>
+					</p>
+					<p>
+						<i>Al in het eerste gesprek met Marianne voelde ik me begrepen. Het zijn vooral haar hart en warmte waardoor ik me durfde te openen. Mijn vertrouwen in mezelf, ons dochtertje en ons gezin groeide.</i>
+					</p>
+					<p>
+						<i>(H. van Vliet, 32 jaar)</i>
+					</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="footervak">
+				<footer class="footertekst">
+					<table>
+						<tbody>
+							<tr>
+								<td>
+									Marianne Bles
+								</td>
+								<td>
+									|
+								</td>
+								<td>
+									Psychosociale Therapie Met Open Hart
+								</td>
+								<td>
+									|
+								</td>
+								<td>
+									<a href="tel:06-12452224" class="link">06-12452224</a>
+								</td>
+								<td>
+									|
+								</td>
+								<td>
+									<a href="mailto:info@mariannebles.nl?SUBJECT=Reactie" class="link">info@mariannebles.nl</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</footer>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+
+				var $tabs = $('#tabs').tabs();
+
+				$(".ui-tabs-panel").each(function(i) {
+
+					var totalSize = $(".ui-tabs-panel").size() - 1;
+
+					if (i != totalSize) {
+						next = i + 2;
+						$(this).append("<a href='#' class='next-tab mover' rel='" + next + "'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Volgende  &#187;</a>");
+					}
+
+					if (i != 0) {
+						prev = i;
+						$(this).append("<a href='#' class='prev-tab mover' rel='" + prev + "'>&#171;  Vorige &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>");
+					}
+
+				});
+
+				$('.next-tab, .prev-tab').click(function() {
+					$tabs.tabs('select', $(this).attr("rel"));
+					return false;
+				});
+
+
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".overlayf").css("display", "block");
+			});
+			$(document).ready(function() {
+				$(".overlayf2").css("display", "block");
+			});
+			$(document).ready(function() {
+				$("html").css("overflow", "auto");
+			});
+		</script>
+
+
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-46475527-2', 'mariannebles.nl');
+			ga('send', 'pageview');
+		</script>
+
+
+
+
+
+	</body>
+
+</html>
